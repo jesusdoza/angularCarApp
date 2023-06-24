@@ -9,9 +9,37 @@
 </head>
 
 <body>
-  <nav class="bg-red-600">
+  <nav>
+    <ul class="flex justify-evenly">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Search</a>
+      </li>
+      <li>
+        <a href="#">Dashboard</a>
+      </li>
+    </ul>
+  </nav>
+  <nav>
+    <section>
+      <h2>Search</h2>
+      <input [(ngModel)]="serverName" type="text">
+    </section>
+    <section>
+      <h2>Latest Vehicle</h2>
+      <section>
+        <div class="bg-red-600 w-full h-5">
+          <img src="" alt="vehicle picture">
+        </div>
+      </section>
+    </section>
 
-    <h2 class="bg-red-600">hellow</h2>
+    <h2>hellow</h2>
+    <div>
+      {{serverName}}
+    </div>
   </nav>
 
 </body>
